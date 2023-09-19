@@ -1,0 +1,287 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xDd4083885830531986eb3ED3A3D8D0877E23FD29",
+    "txHash": "0xef12068f37862bb314726612aec38ddf20628eb9e6fdff5075d81af8b5cf05cb"
+  },
+  "proxies": [
+    {
+      "address": "0xc9a0ABeB48edAFcdb743c5B28d8E4996dbdC0207",
+      "txHash": "0xa12f2935bea66de1ef4cdff57bdf2e8536f9851734b220f65ef754f0a52c4a4d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xC22b094a471D9DC2Ff2EbE050A56A1d6a25cf4CA",
+      "txHash": "0xbdc1dadf333fc0aeb41d617ce7de7f30817e8451404f1f51a4924f0625e4bd98",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "6a23be2fca2431d9fac7fcef2c13cc91757cfe33b60141291f38dc79dd36c5c9": {
+      "address": "0x644E415aA0c6732A98E601aaf707c883CC06084e",
+      "txHash": "0xd569235ff5405d255a04ac23acfe2cc458d782bab969e5421c967420a0a726ad",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:68"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuard",
+            "src": "@openzeppelin\\contracts\\security\\ReentrancyGuard.sol:40"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "TokenizedShares",
+            "src": "contracts\\TokenizedShares.sol:23"
+          },
+          {
+            "label": "owners",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "TokenizedShares",
+            "src": "contracts\\TokenizedShares.sol:24"
+          },
+          {
+            "label": "shareOwner",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_array(t_struct(Share)3226_storage)dyn_storage)",
+            "contract": "TokenizedShares",
+            "src": "contracts\\TokenizedShares.sol:30"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Share)3226_storage)dyn_storage": {
+            "label": "struct TokenizedShares.Share[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_struct(Share)3226_storage)dyn_storage)": {
+            "label": "mapping(address => struct TokenizedShares.Share[])",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Share)3226_storage": {
+            "label": "struct TokenizedShares.Share",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "buyAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "buyPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "tokenAmt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "19cea628e7b72f40c0f75b5cf37321d616deacdf22d892ebfdef1b60eece357f": {
+      "address": "0x3Eed239AB48991F2420d752E3cecC957b1D297EB",
+      "txHash": "0x38b8b52b8b5b743d041c8d4e6a7a4a9a664e8bccd8b20440e62b8ca9e7bcfaf8",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:68"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuard",
+            "src": "@openzeppelin\\contracts\\security\\ReentrancyGuard.sol:40"
+          },
+          {
+            "label": "UserInfos",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_array(t_struct(UserInfo)1754_storage)dyn_storage)",
+            "contract": "CPAMM",
+            "src": "contracts\\CPAMM.sol:45"
+          },
+          {
+            "label": "reserves",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "CPAMM",
+            "src": "contracts\\CPAMM.sol:47"
+          },
+          {
+            "label": "totalSupply",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "CPAMM",
+            "src": "contracts\\CPAMM.sol:49"
+          },
+          {
+            "label": "tokenizedSharesContract",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_contract(TokenizedShares)4459",
+            "contract": "CPAMM",
+            "src": "contracts\\CPAMM.sol:50"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(UserInfo)1754_storage)dyn_storage": {
+            "label": "struct CPAMM.UserInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(TokenizedShares)4459": {
+            "label": "contract TokenizedShares",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_array(t_struct(UserInfo)1754_storage)dyn_storage)": {
+            "label": "mapping(address => struct CPAMM.UserInfo[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(UserInfo)1754_storage": {
+            "label": "struct CPAMM.UserInfo",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "token1",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "token2",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "token1Amt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "token2Amt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "shares",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
